@@ -1,3 +1,35 @@
+/*Navigation styling*/
+.nav{
+    background-color: darkred;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .nav-list{
+    display: flex;
+    margin-right: 2em;
+    font-family: 'Kalnia', serif;
+    font-family: 'Lato', sans-serif;
+  }
+  .nav-list li{
+    display: inline;
+    margin: 0 1rem;
+  }
+  .nav-list a{
+    color: #f1faee;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    transition: color 1.5s ease;
+  }
+  .nav-list a:hover{
+    color: yellow;
+  }
 body{
-    color: #1d3557;
-    background-color: #7a86b6;}
+
+}

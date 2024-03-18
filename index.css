@@ -1,35 +1,100 @@
 /*Navigation styling*/
-.nav{
-    background-color: darkred;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+nav{
+  background-color: #CF1E1C;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Cambay", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  align-items: center;
+}
+/*Logo styling*/
+.logo{
+  flex:1
+}
+.logo img{
+  width: 5rem;
+  height: 5rem;
+  padding: 10px 10px;
+
+}
+.logo a{
+  color: #f1faee;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: color 1.5s ease;
+  display: flex;
+  align-items: center;
+}
+.logo a:hover{
+  color: yellow;
+}
+
+/*Navigation bar styling*/
+.nav-list{
+  display: flex;
+  margin-right: 2em;
+  list-style: none;   
+}
+
+.nav-list li{
+  padding: 10px 10px;
+}
+
+.nav-list a{
+  color: #f1faee;
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 0.5rem 0.5rem;
+  transition: color 1.5s ease;
+}
+
+.nav-list a:hover{
+  color: yellow;
+}
+
+.toggle{
+  font-size: 35px;
+  display: none;
+  position: absolute;
+}
+ion-icon{
+  color:#f1faee;
+  transition: color 1.5s ease;
+}
+ion-icon:hover {
+  color: yellow;
+}
+
+@media screen and (max-width: 739px) {
+  nav{
+    display: block;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
   }
 
   .nav-list{
-    display: flex;
-    margin-right: 2em;
-    font-family: 'Kalnia', serif;
-    font-family: 'Lato', sans-serif;
+    margin-top: 15px;
+    display: none;
   }
-  .nav-list li{
-    display: inline;
-    margin: 0 1rem;
-  }
-  .nav-list a{
-    color: #f1faee;
-    font-size: 1rem;
-    text-decoration: none;
-    padding: 0.5rem 0.5rem;
-    transition: color 1.5s ease;
-  }
-  .nav-list a:hover{
-    color: yellow;
-  }
-body{
 
+  .nav-list.active, .toggle{
+    display: block;
+    padding-left: 62px;
+  }
+
+  .nav-list.active{
+  }
+
+  .toggle.move{
+    bottom: 260px;
+  }
+
+  .toggle{
+    position: absolute;
+    right: 60px;
+    bottom: 15px;
+  }
 }

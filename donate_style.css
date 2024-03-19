@@ -1,0 +1,18 @@
+/*Donate Form Styling Start*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*Color Palette*/
+  :root{
+    --yellow: #FDBD22;
+    --red: #CF1E1C;
+    --white: #F1FAEE;
+    --tan: #DCDAC3;
+  }
+
+  body{
+    background-color: var(--tan);
+    font-family: 
+  }

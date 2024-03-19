@@ -10,9 +10,154 @@
     --red: #CF1E1C;
     --white: #F1FAEE;
     --tan: #DCDAC3;
+    --pure-white: #fff
   }
 
   body{
     background-color: var(--tan);
-    font-family: 
+    font-family: "Convergence", "Cambay", sans-serif
+  }
+
+/*Header stylings start*/
+  .wrapper{
+    background-color: var(--white);
+    width: 500px;
+    padding: 25px;
+    margin: 25px auto 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+
+  .wrapper h2{
+    background-color: var(--red);
+    color: var(--yellow);
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 8px;
+    text-align: center;
+    border: 2px dashed var(--yellow)
+  }
+
+  .wrapper h4{
+    padding-bottom: 5px;
+    color: var(--red);
+  }
+/*Header stylings end*/
+
+/*User input box stylings start*/
+  .input_group{
+    margin-bottom: 8px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+  }
+
+  .input_box{
+    width: 100%;
+    margin-right: 12px;
+    position: relative;
+  }
+
+  .input_box:last-child{
+    margin-right: 0;
+  }
+
+  /*Text that the user inputs*/
+  .input_box .name{
+    padding: 14px 10px 14px 50px;
+    width: 100%;
+    background-color: var(--pure-white);
+    border: 1px solid var(--red);
+    outline: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    border-radius: 3px;
+    color: var(--pure-white);
+  }
+
+  /*Makes border glow when clicked on (focus)*/
+  .input_box .name:focus, .dob:focus{
+    -webkit-box-shadow: 0 0 2px 1px var(--red);
+    -moz-box-shadow: 0 0 2px 1px var(--red);
+    box-shadow: 0 0 2px 1px var(--red);
+    border: 1px solid var(--red);
+  }
+
+  .input_box .icon{
+    width: 48px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    color: var(--pure-white);
+    background-color: var(--red);
+    border-radius: 2px 0 0 2px;
+    transition: 0.3s;
+    font-size: 20px;
+    pointer-events: none;
+    /*Might remove, not sure if it looka good*/
+    border: 1px solid var(--pure-white);
+    border-right: none
+    /*Removeable segment*/
+  }
+
+  /*Changes icon color when selected*/
+  .name:focus+.icon{
+    background-color: var(--yellow);
+    color: var(--white);
+    border: 1px solid var(--red); 
+    border: none;
+    transition: 1s;
+  }
+
+  .dob{
+    width: 30%;
+    padding: 14px;
+    text-align: center;
+    background-color: var(--pure-white);
+    transition: 0.3s;
+    outline: none;
+    border: 1px solid var(--red);
+  }
+
+  .radio{
+    display: none;
+  }
+/*Credit card and Paypal labels*/
+  .input_box label{
+    width: 50%;
+    padding: 13px;
+    background-color: var(--pure-white);
+    display: inline-block;
+    float: left;
+    text-align: center;
+    border: 1px solid var(--red)
+  }
+
+  .radio:checked+label{
+    background-color: var(--red);
+    color: var(--yellow);
+    transition: 0.4s
+  }
+/*Submit form button styling*/
+  .input_box button{
+    width: 100%;
+    background-color: var(--red);
+    color: var(--pure-white);
+    border: none;
+    padding: 15px;
+    border-right: 4px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+  }
+
+  .input_box button:hover{
+    cursor: pointer;
+    background-color: var(--yellow);
   }

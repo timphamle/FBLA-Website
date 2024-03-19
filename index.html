@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Convergence&display=swap" rel="stylesheet">
     
     <!-- Icons Linked -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -18,13 +22,15 @@
     <!-- Scripts Linked -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="navbar.js"></script>
+    <script src="countdown.js"></script>
+
     <title>Envelope Gala</title>
 </head>
 <body>
     <!--Navigation-->
   <nav class="nav">
     <div class="logo">
-      <a href="#section1"><img src="/assets/logo.png" alt="logo">Envelope Gala</a>
+      <a href="#section1"><img src="/assets/logo.png" alt="logo">Lunar Gala</a>
     </div>
     <div class="toggle">
       <a><ion-icon name="menu-outline"></ion-icon></a>
@@ -37,6 +43,25 @@
     </ul>
   </nav>
 
-  
+  <section class="container">
+    <div class="countdown-timer">
+      <p id="countdown-date">Come join us</p>
+      <p id="countdown"></p>
+    </div>
+    <div class="slider-wrapper">
+      <div class="slider">
+        <img id="slide-1" src="/assets/slide-1.jpg" alt="A view of a city from the water showing Lunar New Year Fireworks">
+        <img id="slide-2" src="/assets/slide-2.jpg" alt="A view of the inside of the Lunar Gala">
+        <img id="slide-3" src="/assets/slide-3.jpg" alt="A Lunar New Year Dragon light decoration located outside at night">
+      </div>
+      <div class="slider-nav">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+      </div>
+    </div>
+  </section>
+
+
 </body>
 </html>

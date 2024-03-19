@@ -1,4 +1,9 @@
-/*Navigation styling*/
+/* Body Styling */
+body{
+  background-color: #dcdac3;
+  max-width: 100%;
+}
+/* Navigation styling */
 nav{
   background-color: #CF1E1C;
   display: flex;
@@ -10,8 +15,9 @@ nav{
   font-weight: 400;
   font-style: normal;
   align-items: center;
+  z-index: 10
 }
-/*Logo styling*/
+/* Logo styling */
 .logo{
   flex:1
 }
@@ -23,7 +29,7 @@ nav{
 }
 .logo a{
   color: #f1faee;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   text-decoration: none;
   transition: color 1.5s ease;
   display: flex;
@@ -33,7 +39,7 @@ nav{
   color: yellow;
 }
 
-/*Navigation bar styling*/
+/* Navigation bar styling */
 .nav-list{
   display: flex;
   margin-right: 2em;
@@ -46,7 +52,7 @@ nav{
 
 .nav-list a{
   color: #f1faee;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   text-decoration: none;
   padding: 0.5rem 0.5rem;
   transition: color 1.5s ease;
@@ -69,7 +75,7 @@ ion-icon:hover {
   color: yellow;
 }
 
-@media screen and (max-width: 739px) {
+@media screen and (max-width: 795px) {
   nav{
     display: block;
     position: fixed;
@@ -97,4 +103,78 @@ ion-icon:hover {
     right: 60px;
     bottom: 15px;
   }
+}
+
+/* Slider Styling */
+.container{
+  padding-top: 5.78rem;
+  max-width: 100%;
+}
+
+.slider-wrapper{
+  position: relative;
+  max-width: 100%;
+  scale: 100%;
+}
+
+.slider{
+  display: flex;
+  aspect-ratio: 21 / 9;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.slider img{
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider-nav{
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translate (-50%);
+  z-index: 1;
+}
+
+.slider-nav a{
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #f1faee;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover{
+  opacity: 1;
+}
+
+#slide-1{
+  object-position: 50% 10%;
+}
+
+#slide-2{
+  object-position: 50% 65%;
+}
+
+#slide-3{
+  object-position: 50% 0%;
+}
+
+
+/* Countdown Styling */
+.countdown-timer{
+  font-family: "Convergence", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: #f1faee;
+  text-transform: uppercase;
+  z-index: 5;
+  position: absolute;
 }

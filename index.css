@@ -2,6 +2,8 @@
 body{
   background-color: #dcdac3;
   max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 /* Navigation styling */
 nav{
@@ -114,7 +116,8 @@ ion-icon:hover {
 .slider-wrapper{
   position: relative;
   max-width: 100%;
-  scale: 100%;
+  margin: auto;
+
 }
 
 .slider{
@@ -169,7 +172,7 @@ ion-icon:hover {
 
 /* Countdown Styling */
 .countdown-timer{
-  font-family: "Convergence", sans-serif;
+  font-family: "Cambay", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;

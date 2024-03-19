@@ -1,13 +1,22 @@
 /* Body Styling */
 body{
-  background-color: #dcdac3;
+  background-color: var(--tan);
   max-width: 100%;
   margin: 0;
-  padding: 0;
 }
+
+/* Color Styling */
+
+:root{
+  --yellow: #FDBD22;
+  --red: #CF1E1C;
+  --white: #F1FAEE;
+  --tan: #DCDAC3;
+}
+
 /* Navigation styling */
 nav{
-  background-color: #CF1E1C;
+  background-color: var(--red);
   display: flex;
   position: fixed;
   top: 0;
@@ -30,7 +39,7 @@ nav{
 
 }
 .logo a{
-  color: #f1faee;
+  color: var(--white);
   font-size: 1.7rem;
   text-decoration: none;
   transition: color 1.5s ease;
@@ -38,7 +47,7 @@ nav{
   align-items: center;
 }
 .logo a:hover{
-  color: yellow;
+  color: var(--yellow);
 }
 
 /* Navigation bar styling */
@@ -53,7 +62,7 @@ nav{
 }
 
 .nav-list a{
-  color: #f1faee;
+  color: var(--white);
   font-size: 1.7rem;
   text-decoration: none;
   padding: 0.5rem 0.5rem;
@@ -61,7 +70,7 @@ nav{
 }
 
 .nav-list a:hover{
-  color: yellow;
+  color: var(--yellow);
 }
 
 .toggle{
@@ -70,11 +79,11 @@ nav{
   position: absolute;
 }
 ion-icon{
-  color:#f1faee;
+  color: var(--white);
   transition: color 1.5s ease;
 }
 ion-icon:hover {
-  color: yellow;
+  color: var(--yellow);
 }
 
 @media screen and (max-width: 795px) {
@@ -116,8 +125,7 @@ ion-icon:hover {
 .slider-wrapper{
   position: relative;
   max-width: 100%;
-  margin: auto;
-
+  scale: 100%;
 }
 
 .slider{
@@ -148,7 +156,7 @@ ion-icon:hover {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background-color: #f1faee;
+  background-color: var(--white);
   opacity: 0.75;
   transition: opacity ease 250ms;
 }
@@ -172,12 +180,14 @@ ion-icon:hover {
 
 /* Countdown Styling */
 .countdown-timer{
-  font-family: "Cambay", sans-serif;
+  font-family: "Convergence", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
-  color: #f1faee;
+  color: var(--white);
   text-transform: uppercase;
   z-index: 5;
   position: absolute;
 }
+
+/* Mission and About Section Styling */

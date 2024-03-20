@@ -1,6 +1,30 @@
+/*Home Button - Logo styling*/
+.logo{
+  flex:1
+}
+.logo img{
+  width: 6rem;
+  height: 6rem;
+
+
+}
+.logo a{
+  color: var(--red);
+  font-size: 1.7rem;
+  text-decoration: none;
+  transition: color 0.5s ease;
+  display: flex;
+  align-items: center;
+  font-family: "Convergence", "Cambay", sans-serif;
+}
+.logo a:hover{
+  color: var(--yellow);
+}
+
 /*Donate Form Styling Start*/
 *{
     margin: 0;
+    margin-top: -2px;
     padding: 0;
     box-sizing: border-box;
   }
@@ -15,7 +39,7 @@
 
   body{
     background-color: var(--tan);
-    font-family: "Convergence", "Cambay", sans-serif
+    font-family: "Convergence", "Cambay", sans-serif;
   }
 
 /*Header stylings start*/
@@ -100,10 +124,6 @@
     transition: 0.3s;
     font-size: 20px;
     pointer-events: none;
-    /*Might remove, not sure if it looka good*/
-    border: 1px solid var(--pure-white);
-    border-right: none
-    /*Removeable segment*/
   }
 
   /*Changes icon color when selected*/
@@ -146,6 +166,7 @@
   }
 /*Submit form button styling*/
   .input_box button{
+    margin-top: 5px;
     width: 100%;
     background-color: var(--red);
     color: var(--pure-white);

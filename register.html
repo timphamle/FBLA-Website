@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="register_style.css">
+    <!--Icons--><link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <!--Fonts--><!-- Font Linked -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="container-time">
+            <h2 class="heading">Next Lunar New Year</h2>
+            <h3 class="heading-days">Wed, Jan 29, 2025</h3>
+            <p>3pm - 8pm</p>
+
+            <hr>
+
+            <h4 class="heading-phone">More than 6? Call us at: (555)-555-5555</h4>
+        </div>
+
+        <div class="container-form">
+
+            <form action="#">
+
+                <h2 class="heading">Reservations/Registrations</h2>
+                
+                <div class="form-field">
+                    <p>Name</p>
+                    <input type="text" placeholder="Name for reservation" required>
+                    <i class="fa fa-user icon"></i>
+                </div>
+                <div class="form-field">
+                    <p>Email Address</p>
+                    <input type="email" placeholder="Email address" required> 
+                    <i class="fa fa-envelope icon"></i>
+                </div>
+                <div class="form-field">
+                    <p>Phone Number</p>
+                    <input type="text" placeholder="XXX-XXX-XXXX" required>
+                    <i class="fa fa-phone-square icon"></i>
+                </div>
+                <div class="form-field">
+                    <p>Party Size</p>
+                    <select name="select" id="#" required>
+                        <option value="1">1 person</option>
+                        <option value="2">2 people</option>
+                        <option value="3">3 people</option>
+                        <option value="4">4 people</option>
+                        <option value="5">5 people</option>
+                        <option value="6">6 people</option>
+                    </select>
+                    <i class="fa fa-users icon"></i>
+                </div>
+                <div class="form-field">
+                    <p>Special Notes or Requests</p>
+                    <input type="text" placeholder="Additional information, ex: allergies">
+                    <i class="fa fa-comments-o icon"></i>
+                </div>
+
+                <button class="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

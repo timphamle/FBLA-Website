@@ -1,0 +1,102 @@
+/*Home Button - Logo styling*/
+.logo{
+    flex:1
+  }
+  .logo img{
+    width: 6rem;
+    height: 6rem;
+  
+  
+  }
+  .logo a{
+    color: var(--red);
+    font-size: 1.7rem;
+    text-decoration: none;
+    transition: color 0.5s ease;
+    display: flex;
+    align-items: center;
+    font-family: "Convergence", "Cambay", sans-serif;
+  }
+  .logo a:hover{
+    color: var(--yellow);
+  }
+
+/*Color Palette*/
+:root{
+    --yellow: #FDBD22;
+    --red: #CF1E1C;
+    --white: #F1FAEE;
+    --tan: #DCDAC3;
+    --pure-white: #fff
+  }
+
+body{
+    background-color: var(--tan);
+    font-family: "Convergence", "Cambay", sans-serif;
+}
+
+.container{
+    background-color: var(--pure-white);
+    margin: 200px;
+    box-shadow: 10px 15px 20px rgba(0,0,0,.1);
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.container-time{
+    background-color: var(--red);
+    padding: 50px;
+    border: 3px dashed var(--yellow);
+    outline-offset: -30px;
+    text-align: center;
+}
+
+.heading{
+    font-size: 35px;
+}
+
+.heading-days{
+    color: var(--yellow);
+    font-size: 30px;
+}
+
+.heading-phone{
+    font-size: 20px;
+}
+.container-form{
+  padding: 20px 0;
+  margin: 0 auto;
+  color: var(--red);
+}
+form{
+    display: grid;
+    grid-row-gap: 20px;
+}
+form p{
+    font-weight: 600;
+}
+.form-field{
+    display: flex;
+    justify-content: space-between;
+}
+
+input, select{
+    pad: 10px 15px;
+}
+.submit{
+    background-color: rgba(0,0,0,.95);
+    color: var(--pure-white);
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    box-shadow: 7px 10px 12px rgba(0,0,0,.1);
+}
+.submit:hover{
+    transform: scale(1.03) ;
+    box-shadow: 10px 12px 15px rgba(0,0,0,.3);
+}

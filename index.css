@@ -191,3 +191,105 @@ ion-icon:hover {
 }
 
 /* Mission and About Section Styling */
+.info h1{
+  font-family: "Cambay", sans-serif;
+  font-weight: 1200;
+  font-style: normal;
+  font-size: 2rem;
+  color: var(--red);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.info p{
+  font-family: "Convergence", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  display: flex;
+  text-align: center;
+}
+
+.mission-seperator{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6.5rem;
+  width: 0rem;
+  border-color: var(--yellow);
+  border-style: solid;
+  border-width: 0.1rem;
+  margin: 0;
+}
+
+.mission{
+  padding-top: 1rem;
+}
+
+.about-seperator{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  height: 0rem;
+  border-color: var(--yellow);
+  border-style: solid;
+  margin: auto;
+  margin-top: 0;
+  border-width: 0.1rem;
+}
+
+/* Mission Styling */
+.mission{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission p{
+  display: relative;
+  justify-content: center;
+  align-items: center;
+  max-width: 20rem;
+  margin: auto;
+}
+
+.mission h1{
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+@media screen and (max-width: 620px){
+.mission{
+flex-direction: column;
+margin: auto;
+}
+
+.mission p{
+  padding: 0;
+}
+
+.mission h1{
+  padding: 0;
+}
+
+.mission-seperator{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  height: 0rem;
+  border-color: var(--yellow);
+  border-style: solid;
+  margin: auto;
+  margin-top: 0;
+  border-width: 0.1rem;
+}
+
+}

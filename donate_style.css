@@ -54,7 +54,7 @@
 
   .wrapper h2{
     background-color: var(--red);
-    color: var(--yellow);
+    color: var(--white);
     font-size: 24px;
     padding: 10px;
     margin-bottom: 8px;
@@ -98,7 +98,7 @@
     letter-spacing: 1px;
     transition: 0.3s;
     border-radius: 3px;
-    color: var(--pure-white);
+    color: grey;
   }
 
   /*Makes border glow when clicked on (focus)*/
@@ -141,6 +141,7 @@
     transition: 0.3s;
     outline: none;
     border: 1px solid var(--red);
+    color: grey;
   }
 
   .radio{

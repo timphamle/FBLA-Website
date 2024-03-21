@@ -113,7 +113,7 @@ ion-icon:hover {
 
 /* Slider Styling */
 .container{
-  padding-top: 5.78rem;
+  padding-top: 6rem;
   max-width: 100%;
 }
 
@@ -125,7 +125,7 @@ ion-icon:hover {
 
 .slider{
   display: flex;
-  aspect-ratio: 10 / 3;
+  aspect-ratio: 3 / 1;
   overflow-x: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -161,7 +161,7 @@ ion-icon:hover {
 }
 
 #slide-1{
-  object-position: 50% 10%;
+  object-position: 50% 0%;
 }
 
 #slide-2{
@@ -169,7 +169,7 @@ ion-icon:hover {
 }
 
 #slide-3{
-  object-position: 50% 0%;
+  object-position: 10% 0%;
 }
 
 /* Mission Section Styling */

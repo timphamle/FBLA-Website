@@ -1,0 +1,149 @@
+/*Home Button - Logo styling*/
+.logo{
+    flex:1
+  }
+  .logo img{
+    width: 6rem;
+    height: 6rem;
+  
+  
+  }
+  .logo a{
+    color: var(--red);
+    font-size: 1.7rem;
+    text-decoration: none;
+    transition: color 0.5s ease;
+    display: flex;
+    align-items: center;
+    font-family: "Convergence", "Cambay", sans-serif;
+  }
+  .logo a:hover{
+    color: var(--yellow);
+  }
+   /*Color Palette*/
+   :root{
+    --yellow: #FDBD22;
+    --red: #CF1E1C;
+    --white: #F1FAEE;
+    --tan: #DCDAC3;
+    --pure-white: #fff
+  }
+
+  body{
+    background-color: var(--tan);
+    font-family: "Convergence", "Cambay", sans-serif;
+  }
+.wrapper{
+    background-color: var(--white);
+    width: 1000px;
+    padding: 0px;
+    margin: auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    grid-template-columns: 40% 60%;
+    display: grid;
+}
+h4{
+    font-size: 1rem;
+    margin: 10px;
+    color: var(--red);
+}
+.left_info{
+    background-color: var(--red);
+    padding: 50px;
+    outline: 3px dashed var(--yellow);
+    outline-offset: -30px;
+    text-align: center;
+    color: var(--pure-white)
+}
+.left_info p{
+    background-color: var(--red);
+    padding: 50px;
+    outline: 3px dashed var(--yellow);
+    outline-offset: -40px;
+    color: var(--y);
+    font-weight: bold;
+}
+/*User input box stylings start*/
+.input_group, h4{
+    margin-left: 120px;
+    margin-bottom: 8px;
+    width: 50%;
+    position: relative;
+    flex-direction: row;
+    padding: 5px 0;
+  }
+
+  .input_box{
+    width: 100%;
+    margin-right: 12px;
+    position: relative;
+  }
+
+  /*Text that the user inputs*/
+  .input_box .name{
+    padding: 14px 10px 14px 50px;
+    width: 100%;
+    background-color: var(--pure-white);
+    border: 1px solid var(--red);
+    outline: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    border-radius: 3px;
+    color: var(--pure-white);
+    color: grey;
+  }
+
+  /*Makes border glow when clicked on (focus)*/
+  .input_box .name:focus, .dob:focus{
+    -webkit-box-shadow: 0 0 2px 1px var(--red);
+    -moz-box-shadow: 0 0 2px 1px var(--red);
+    box-shadow: 0 0 2px 1px var(--red);
+    border: 1px solid var(--red);
+  }
+
+  .input_box .icon{
+    width: 48px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    color: var(--pure-white);
+    background-color: var(--red);
+    border-radius: 2px 0 0 2px;
+    transition: 0.3s;
+    font-size: 20px;
+    pointer-events: none;
+  }
+
+  /*Changes icon color when selected*/
+  .name:focus+.icon{
+    background-color: var(--yellow);
+    color: var(--white);
+    border: 1px solid var(--red); 
+    border: none;
+    transition: 1s;
+  }
+  /*Submit form button styling*/
+  .input_box button{
+    margin-left: 120px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 60%;
+    background-color: var(--red);
+    color: var(--pure-white);
+    border: none;
+    padding: 15px;
+    border-right: 4px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+  }
+
+  .input_box button:hover{
+    cursor: pointer;
+    background-color: var(--yellow);
+  }

@@ -1,0 +1,48 @@
+/*Color Palette*/
+:root{
+  --yellow: #FDBD22;
+  --red: #CF1E1C;
+  --white: #F1FAEE;
+  --tan: #DCDAC3;
+  --pure-white: #fff
+}
+body{
+  background-color: var(--red);
+  font-family: "Convergence", "Cambay", sans-serif;
+}
+.wrapper{
+  background-color: var(--white);
+  width: 50%;
+  padding: 10px;
+  margin: auto;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  
+}
+.heading{
+  text-align: center;
+}
+/*Submit form button styling*/
+.return{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 60%;
+  background-color: var(--red);
+  color: var(--pure-white);
+  border: none;
+  padding: 15px;
+  border-right: 4px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  font-family: "Convergence", "Cambay", sans-serif;
+  font-weight: 700;
+}
+
+.return:hover{
+  cursor: pointer;
+  background-color: var(--yellow);
+}

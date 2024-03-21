@@ -478,7 +478,7 @@ ion-icon:hover {
   font-size: 1rem;
 }
 
-#countdown-run-date{
+#countdown-run-date, #location{
   font-size: 1.3rem;
   font-weight: 400;
   margin-top: 0;
@@ -608,7 +608,7 @@ footer p{
     font-size: 0.8rem;
   }
   
-  #countdown-run-date, .contact-email{
+  #countdown-run-date, .contact-email, #location{
     font-size: 1rem;
   }
 

@@ -91,6 +91,7 @@ h4{
     transition: 0.3s;
     border-radius: 3px;
     color: var(--pure-white);
+    color: grey;
   }
 
   /*Makes border glow when clicked on (focus)*/

@@ -103,8 +103,6 @@
 
   /*Makes border glow when clicked on (focus)*/
   .input_box .name:focus, .dob:focus{
-    -webkit-box-shadow: 0 0 2px 1px var(--red);
-    -moz-box-shadow: 0 0 2px 1px var(--red);
     box-shadow: 0 0 2px 1px var(--red);
     border: 1px solid var(--red);
   }

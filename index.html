@@ -24,30 +24,25 @@
     <script src="navbar.js"></script>
     <script src="countdown.js"></script>
 
-    <title>Envelope Gala</title>
+    <title>Lunar Gala</title>
 </head>
 <body>
     <!--Navigation-->
   <nav class="nav">
     <div class="logo">
-      <a href="#section1"><img src="/assets/logo.png" alt="logo">Lunar Gala</a>
+      <a href="index.html"><img src="/assets/logo-new.png" alt="logo">Lunar Gala</a>
     </div>
     <div class="toggle">
       <a><ion-icon name="menu-outline"></ion-icon></a>
     </div>
     <ul class="nav-list">
-      <li class="element"><a href="#section1">About</a></li>
-      <li class="element"><a href="register.html">Register</a></li>
+
       <li class="element"><a href="#section4">Contact</a></li>
       <li class="element"><a href="donate.html">Donate</a></li>
     </ul>
   </nav>
 
   <section class="container">
-    <div class="countdown-timer">
-      <p id="countdown-date">Come join us</p>
-      <p id="countdown"></p>
-    </div>
     <div class="slider-wrapper">
       <div class="slider">
         <img id="slide-1" src="/assets/slide-1.jpg" alt="A view of a city from the water showing Lunar New Year Fireworks">
@@ -62,6 +57,87 @@
     </div>
   </section>
 
+  <div class="seperator"></div>
+
+  <div class="info-mission">
+    <section class="mission">
+      <h1>Our Mission</h1>
+      <p>The Lunar Gala is committed to assisting in South East Asian Refugee relocation by providing financial assistance and raising awareness with the help of the United Nations Refugee Agency.</p>
+    </section>
+    <div class="blank-box"></div>
+  </div>
+
+  <div class="seperator"></div>
+
+  <div class="info-about" id="info-about">
+    <div class="blank-box"></div>
+    <section class="about">
+      <h1>About Us</h1>
+      <p>Lunar New Year celebrates the arrival of spring and the beginning of a new year on the lunar calendar. Many countries partake in this wondrous celebration: China, South Korea, Vietnam, and other countries with a significant overseas Chinese population. The celebration is symbolic of welcoming a new year of good luck, big fortunes, and great health.
+
+        <br><br>The Lunar Gala hopes to use this marvelous celebration to raise funds and awareness for Southeast Asian Refugees. We hope that despite the bad conditions and circumstances that these refugees go through, the incoming new year will bring them good fortunes.
+      </p>
+    </section>
+  </div>
+
+  <div class="seperator"></div>
+
+  <section class="join-us">
+    <div class="countdown-timer">
+      <h1 id="countdown-title">Join us</h1>
+      <p id="countdown-run-date">Wednesday, January 29th, 2025</p>
+      <div class="countdown-date">
+        <div>
+          <p id="days">00</p>
+          <span>Days</span>
+        </div>
+        <div>
+          <p id="hours">00</p>
+          <span>Hours</span>
+        </div>
+        <div>
+          <p id="minutes">00</p>
+          <span>Minutes</span>
+        </div>
+        <div>
+          <p id="seconds">00</p>
+          <span>Seconds</span>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="join-us-button" onclick = "window.location.href='index.html'">Register</button>
+
+  </section>
+
+  <div class="seperator"></div>
+
+  <section class="contact">
+    <h1 class="contact-title">Contact Us:</h1>
+    <p class="contact-email">contact@lunargala.com</h1>
+    <a class="contact-us-button-wrapper" href="mailto:contact@lunargala.com">
+      <button type="button" class="contact-us-button">email us</button>
+    </a>
+  </section>
+
+  <footer>
+    <div class="footer-logos">
+      <a class="logo-links" href="https://www.youtube.com/">
+        <ion-icon class="footer-logo" name="logo-youtube"></ion-icon>
+      </a>
+      <a class="logo-links" href="https://www.facebook.com/">
+        <ion-icon class="footer-logo" name="logo-facebook"></ion-icon>
+      </a>
+      <a class="logo-links" href="https://www.instagram.com/">
+        <ion-icon class="footer-logo" name="logo-instagram"></ion-icon>
+      </a>
+      <a class="logo-links" href="https://www.twitter.com/">
+        <ion-icon class="footer-logo" name="logo-twitter"></ion-icon>
+      </a>
+    </div>
+    <p>&copy;	2024 Lunar Gala</p>
+  </footer>
 
 </body>
+
 </html>
